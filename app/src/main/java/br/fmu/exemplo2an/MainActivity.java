@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GorjetaActivity.class);
         startActivity(intent);
     }
+
+    public void abrirDatabase(View view) {
+        Intent intent = new Intent(this, DatabaseActivity.class);
+        startActivity(intent);
+    }
 }
