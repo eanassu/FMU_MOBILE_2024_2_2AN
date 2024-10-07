@@ -3,4 +3,13 @@
     <string name="txt_valor">valor:</string>
     <string name="txt_gorjeta">gorjeta:</string>
     <string name="txt_total">total:</string>
+    <string name="txt_re">RE:</string>
+    <string name="txt_nome">Nome:</string>
+    <string name="txt_dataadmissao">Data de Admissão:</string>
+    <string name="txt_salario">Salário:</string>
+    <string name="txt_cadastrar">Cadastrar</string>
+    <string name="txt_limpar">Limpar</string>
+    <string name="txt_excluir">Excluir</string>
+    <string name="txt_buscarre">Buscar pelo RE</string>
+    <string name="txt_atualizar">Atualizar</string>
 </resources>
