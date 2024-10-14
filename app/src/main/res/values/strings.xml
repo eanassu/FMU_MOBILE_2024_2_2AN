@@ -12,4 +12,5 @@
     <string name="txt_excluir">Excluir</string>
     <string name="txt_buscarre">Buscar pelo RE</string>
     <string name="txt_atualizar">Atualizar</string>
+    <string name="txt_listar">Listar</string>
 </resources>
