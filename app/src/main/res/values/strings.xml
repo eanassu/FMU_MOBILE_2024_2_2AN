@@ -13,4 +13,7 @@
     <string name="txt_buscarre">Buscar pelo RE</string>
     <string name="txt_atualizar">Atualizar</string>
     <string name="txt_listar">Listar</string>
+    <string name="txt_botaoGorjeta">Gorjeta</string>
+    <string name="txt_bancodedados">Banco de dados</string>
+    <string name="txt_desenho">Desenho</string>
 </resources>

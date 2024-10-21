@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -75,5 +76,9 @@ public class GorjetaActivity extends AppCompatActivity {
         textViewPorcentagem.setText(percentFormat.format(porcentagem));
         textViewGorjeta.setText(currencyFormat.format(gorjeta));
         textViewTotal.setText(currencyFormat.format(total));
+    }
+
+    public void fechar(View view) {
+        finish();
     }
 }
