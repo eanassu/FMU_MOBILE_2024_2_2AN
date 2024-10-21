@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DatabaseActivity.class);
         startActivity(intent);
     }
+
+    public void abrirDesenho(View view) {
+        Intent intent = new Intent(this, DesenhoActivity.class);
+        startActivity(intent);
+    }
 }
