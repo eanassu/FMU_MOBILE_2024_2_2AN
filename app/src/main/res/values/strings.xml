@@ -16,4 +16,5 @@
     <string name="txt_botaoGorjeta">Gorjeta</string>
     <string name="txt_bancodedados">Banco de dados</string>
     <string name="txt_desenho">Desenho</string>
+    <string name="txt_sensores">Sensores</string>
 </resources>

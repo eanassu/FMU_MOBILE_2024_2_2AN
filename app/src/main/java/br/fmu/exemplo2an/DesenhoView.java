@@ -30,7 +30,7 @@ public class DesenhoView extends View {
         paintScreen = new Paint();
         paintLine = new Paint();
         paintLine.setAntiAlias(true);
-        paintLine.setColor(Color.BLUE);
+        paintLine.setColor(Color.BLACK);
         paintLine.setStyle(Paint.Style.STROKE);
         paintLine.setStrokeWidth(40);
         paintLine.setStrokeCap(Paint.Cap.ROUND);

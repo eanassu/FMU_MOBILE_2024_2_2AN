@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DesenhoActivity.class);
         startActivity(intent);
     }
+
+    public void abrirSensores(View view) {
+        Intent intent = new Intent(this, SensoresActivity.class);
+        startActivity(intent);
+    }
 }

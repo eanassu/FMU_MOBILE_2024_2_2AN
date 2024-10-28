@@ -7,20 +7,29 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.TextView;
 
-public class DesenhoActivity extends AppCompatActivity {
+import java.util.List;
 
-    private DesenhoView desenhoView;
-    private float acc;
-    private float currentAcc;
-    private float lastAcc;
-    private static final int ACC_LIMIT=5000;
+public class SensoresActivity extends AppCompatActivity {
+
+    private TextView textViewX;
+    private TextView textViewY;
+    private TextView textViewZ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desenho);
-        desenhoView = findViewById(R.id.desenhoView);
+        setContentView(R.layout.activity_sensores);
+        textViewX = findViewById(R.id.textViewX);
+        textViewY = findViewById(R.id.textViewY);
+        textViewZ = findViewById(R.id.textViewZ);
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        System.out.println("Lista de Sensores:");
+        List<Sensor> listaSensores = sensorManager.getSensorList(Sensor.TYPE_ALL);
+        for(Sensor sensor: listaSensores) {
+            System.out.println(sensor.getName());
+        }
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(new SensorEventListener() {
             @Override
@@ -28,16 +37,15 @@ public class DesenhoActivity extends AppCompatActivity {
                 float x = sensorEvent.values[0];
                 float y = sensorEvent.values[1];
                 float z = sensorEvent.values[2];
-                lastAcc = currentAcc;
-                currentAcc = x*x + y*y + z*z;
-                acc = currentAcc * ( currentAcc - lastAcc );
-                if( acc > ACC_LIMIT ) {
-                    desenhoView.clear();
-                }
+                textViewX.setText(Float.toString(x));
+                textViewY.setText(Float.toString(y));
+                textViewZ.setText(Float.toString(z) );
             }
 
             @Override
-            public void onAccuracyChanged(Sensor sensor, int i) {}
+            public void onAccuracyChanged(Sensor sensor, int i) {
+
+            }
         }, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 }
