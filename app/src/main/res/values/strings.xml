@@ -18,4 +18,5 @@
     <string name="txt_desenho">Desenho</string>
     <string name="txt_sensores">Sensores</string>
     <string name="txt_mapas">Mapas</string>
+    <string name="txt_http">HTTP</string>
 </resources>

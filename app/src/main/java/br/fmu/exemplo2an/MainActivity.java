@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
+
+    public void abrirHttp( View view ) {
+        Intent intent = new Intent(this, HttpActivity.class);
+        startActivity(intent);
+    }
 }

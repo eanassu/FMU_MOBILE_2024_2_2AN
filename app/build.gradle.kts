@@ -40,6 +40,7 @@ dependencies {
     implementation("androidx.room:room-common:2.6.1")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("com.google.android.gms:play-services-maps:19.0.0")
+    implementation("com.android.volley:volley:1.2.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
